@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+struct NotesModel:Codable{
+    let id:String
+    var isFavorited:Bool
+    let description:String
+    
+    init(id: String, isFavorited: Bool, description: String) {
+        self.id = id
+        self.isFavorited = isFavorited
+        self.description = description
+    }
+}
